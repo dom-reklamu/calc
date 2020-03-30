@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang=ru-UA>
+
+<head>
+  <meta http-equiv=X-UA-Compatible content="IE=8,IE=9">
+  <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
+  <title>калькулятор</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- top menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link text-primary" href="suppliers.html">
+          <ion-icon name="briefcase-outline"></ion-icon> У постащика
+        </a>
+        <a class="nav-item nav-link text-danger" href="wait.html">
+          <ion-icon name="alarm-outline"></ion-icon>
+          в ожидании
+        </a>
+        <a class="nav-item nav-link" href="order.html">
+          <ion-icon name="albums-outline"></ion-icon> все заказы
+        </a> 
+        <a class="nav-item nav-link text-success" href="ready.html">
+          <ion-icon name="apps-outline"></ion-icon>
+          Готовые заказы
+        </a>
+        <a class="nav-item nav-link text-primary" href="suppliers.html">
+          <ion-icon name="server-outline"></ion-icon> Архив
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- top menu and  - ----->
+
+  <!-- калькулятор форма -->
+  <div class="container">
+    <!-- заголовок h1 -->
+    <h1>Расчет стоимости</h1>
+
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <label for="number">Ширина </label>
+          <input class="form-control" type="number" name="Ширина" placeholder="ширина в мм" id="width"
+            oninput="addSelect()">
+        </div>
+        <div class="col">
+          <label for="number">Высота </label>
+          <input class="form-control" type="number" name="Высота" placeholder="высота в мм" id="height"
+            oninput="addSelect()">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="Select">Выбор изделия</label>
+      <select class="form-control" name="Сетка" id="sitka" oninput="addSelect()">
+        <option selected="selected" value="анвис" id="anvis">Анвис</option>
+        <option value="на_кармане" id="karman">На карманах</option>
+        <option value="премиум" id="premium">Премиум</option>
+        <option value="элит" id="elit">Элит</option>
+        <option value="ролетная" id="rolet">Ролетная</option>
+        <option value="ролетная_на_мансарду" id="rolet_mons">Ролетная на мансардное окно</option>
+        <option value="дверная" id="door">Дверная</option>
+        <option value="дверная_премиум" id="door_premium">Дверная премиум</option>
+        <option value="дверная_элит" id="door_elit">Дверная элит</option>
+        <option value="дверная_элит_рама_п" id="door_elit_rama_p">Дверная элит с П-рамой</option>
+        <option value="дверная_элит_цельная_рама" id="door_elit_rama_zam">Дверная элит с замкнутой рамой</option>
+        <option value="дверная_раздвижная_1" id="door_raz_1">Дверная раздвижная 1 створка</option>
+        <option value="дверная_раздвижная_2" id="door_raz_2">Дверная раздвижная 2 створка</option>
+        <option value="дверная_раздвижная_3" id="door_raz_3">Дверная раздвижная 3 створка</option>
+        <option value="плисе" id="plise">Плисе 1 створка</option>
+        <option value="для_алюм_окон" id="alum">На алюминиевое окно</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="Select">Цвет рамки изделия</label>
+      <select class="form-control" name="Цвет" id="color" defaultValue="Белая"></select>
+    </div>
+
+    <div class="form-group">
+      <div class="switch-field" id="polotno">
+        <input type="radio" id="radio1" name="polotno" value="Полотно обычное" checked />
+        <label for="radio1">полотно обычное</label>
+        <input type="radio" id="radio2" name="polotno" value="Полотно антикошка" />
+        <label for="radio2">полотно антикошка</label>
+        <input type="radio" id="radio3" name="polotno" value="Полотно антиалергенное" />
+        <label for="radio3">полотно антиалергенное</label>
+        <input type="radio" id="radio4" name="polotno" value="Полотно чорное" />
+        <label for="radio4">полотно черное</label>
+      </div>
+      <div class="otboy-field" id="otboy">
+        <input type="radio" id="radio5" name="otboy" value="нет" checked />
+        <label for="radio5">не устанавливать</label>
+        <input type="radio" id="radio6" name="otboy" value="100" />
+        <label for="radio6">100 мм</label>
+        <input type="radio" id="radio7" name="otboy" value="300" />
+        <label for="radio7">300 мм</label>
+      </div>
+      <div class="okno-field" id="okno">
+        <input type="radio" id="radio8" name="okno" value="нет" checked />
+        <label for="radio8">не устанавливать</label>
+        <input type="radio" id="radio9" name="okno" value="215мм" />
+        <label for="radio9">световой проем 215 х 240 мм</label>
+        <input type="radio" id="radio10" name="okno" value="310мм" />
+        <label for="radio10">световой проем 310 х 384 мм</label>
+        <input type="radio" id="radio11" name="okno" value="412мм" />
+        <label for="radio11">световой проем 412 х 482 мм</label>
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <span><input class="form-control" id="resault">Считаемые м.кв.</span>
+        </div>
+        <div class="col">
+          <span><input class="form-control" id="tcena">Стоимость грн.</span>
+        </div>
+      </div>
+      <br>
+      <div class="form-row text-right">
+        <div class="col">
+          <button class="btn btn-primary" onClick="inputOn(); calcOn();">добавит в заказ</button>
+        </div> 
+      </div>
+    </div>
+  </div>
+  </div>   
+  <!-- and калькулятор --------------------------------------------- калькулятор  and -->
+
+  <br> <br>
+ 
+
+
+  <!--  шаблон таблици  №1-->
+  <div class="container">
+    <div class="table-responsive">
+    <table class="table table-sm table-bordered table-hover">
+
+      <thead>
+        <tr class="bg-warning text-center">
+          <th scope="col">#</th>
+          <th scope="col">изделие, тип, дополнения</th>
+          <th scope="col">цвет</th>
+          <th scope="col">ширина</th>
+          <th scope="col">длинна</th>
+          <th scope="col">кол</th>
+          <th scope="col">сумма UAH</th>
+          <th scope="col">del</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-center">1</th>
+          <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
+          <td class="text-left">белый</td><!-- цвет -->
+          <td class="text-right">1200</td><!-- ширина -->
+          <td class="text-right">850</td><!-- длинна -->
+          <td class="text-center">2</td><!-- кол -->
+          <td class="text-right">350</td><!-- стоимость -->
+          <td class="text-center"><i class="fa fa-trash text-danger"></i></td><!-- удалить -->
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">2</th>
+          <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
+          <td class="text-left">коричневый</td><!-- цвет -->
+          <td class="text-right">1450</td><!-- ширина -->
+          <td class="text-right">640</td><!-- длинна -->
+          <td class="text-center">1</td><!-- кол -->
+          <td class="text-right">400</td><!-- стоимость -->
+          <td class="text-center"><i class="fa fa-trash text-danger"></i></td>
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">3</th>
+          <td class="text-left">сетка, премиум, полотно обычное</td><!-- изделие, тип, дополнения -->
+          <td class="text-left">антрацит</td><!-- цвет -->
+          <td class="text-right">1520</td><!-- ширина -->
+          <td class="text-right">840</td><!-- длинна -->
+          <td class="text-center">5</td><!-- кол -->
+          <td class="text-right">3200</td><!-- стоимость -->
+          <td class="text-center"><i class="fa fa-trash text-danger"></i></td>
+        </tr>
+        <tr>
+          <th scope="row" class="border-0"> </th>
+          <td class="border-0"> </td><!-- изделие, тип, дополнения -->
+          <td class="border-0"> </td><!-- цвет -->
+          <td class="border-0"> </td><!-- ширина -->
+          <td class="text-right">Всего: </td><!-- длинна -->
+          <td class="text-center">8</td><!-- кол -->
+          <td class="text-right">3950 грн</td><!-- стоимость -->
+          <td class="border-0"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+<div class="container">
+  <div class="form-row text-right">
+    <div class="col">
+      <a href="offer.html" class="btn btn-primary" role="button" aria-pressed="true">оформить заказ</a>
+    </div>
+  </div>
+</div>
+     
+<br> <br>
+
+
+
+<br><br><br>
+<link href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="js/style.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
