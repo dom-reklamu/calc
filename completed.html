@@ -35,6 +35,10 @@
         <a class="nav-item nav-link text-primary" href="suppliers.html">
           <ion-icon name="briefcase-outline"></ion-icon> У постащика
         </a>
+        <a class="nav-item nav-link text-success" href="ready.html">
+          <ion-icon name="apps-outline"></ion-icon>
+          Готовые заказы
+        </a>
       </div>
     </div>
   </nav>
@@ -46,150 +50,52 @@
   </div>
 
   <div class="container">
-    <br>
-    <span><a href="order/5.html"> Заказ #5 от 28.03</a></span> <small>для перехода к заказу кликаем на его номер  </small>
+    <br> 
+
+    <!--  шаблон таблици  №1-->
+    <div class="container">
+      <p>&lt;!--для просмотра заказа кликаем по номеру заказа--&gt; 
+      <div class="table-responsive">
         <table class="table table-sm table-bordered table-hover">
-          <!--  шаблон таблици -->
+
           <thead>
             <tr class="bg-warning text-center">
-              <th scope="col">#</th>
-              <th scope="col">изделие, тип, дополнения</th>
-              <th scope="col">цвет</th>
-              <th scope="col">ширина</th>
-              <th scope="col">длинна</th>
-              <th scope="col">кол</th> 
+              <th scope="col">Заказа</th>
+              <th scope="col">Клиент</th>
+              <th scope="col">Сумма</th>
+              <th scope="col">Оплачено</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row" class="text-center">1</th>
-              <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
-              <td class="text-left">белый</td><!-- цвет -->
-              <td class="text-right">1200</td><!-- ширина -->
-              <td class="text-right">850</td><!-- длинна -->
-              <td class="text-center">2</td><!-- кол --> 
+              <th scope="row" class="text-center"><a href="order/5.html"> Заказ #2 от 27.03</a></span></th><!-- # заказа -->
+              <td class="text-left">Юрий сергеевич 098 5943316</td><!-- имя Клиента -->
+              <td class="text-right">300</td><!-- сумма -->
+              <td class="text-right">300</td><!-- оплачено -->
             </tr>
             <tr>
-              <th scope="row" class="text-center">2</th>
-              <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
-              <td class="text-left">коричневый</td><!-- цвет -->
-              <td class="text-right">1450</td><!-- ширина -->
-              <td class="text-right">640</td><!-- длинна -->
-              <td class="text-center">1</td><!-- кол --> 
-            </tr>
-            <tr>
-              <th scope="row" class="text-center">3</th>
-              <td class="text-left">сетка, премиум, полотно обычное</td><!-- изделие, тип, дополнения -->
-              <td class="text-left">антрацит</td><!-- цвет -->
-              <td class="text-right">1520</td><!-- ширина -->
-              <td class="text-right">840</td><!-- длинна -->
-              <td class="text-center">5</td><!-- кол --> 
+              <th scope="row" class="text-center"><a href="order/5.html"> Заказ #1 от 26.03</a></span></th><!-- # заказа -->
+              <td class="text-left">Сергей сергеевич 098 5943316</td><!-- имя Клиента -->
+              <td class="text-right">450</td><!-- сумма -->
+              <td class="text-right">450</td><!-- оплачено -->
             </tr>
           </tbody>
         </table>
-    
-        <span><a href="order/5.html"> Заказ #4 от 28.03</a></span>
-        <table class="table table-sm table-bordered table-hover">
-          <!--  шаблон таблици -->
-          <thead>
-            <tr class="bg-warning text-center">
-              <th scope="col">#</th>
-              <th scope="col">изделие, тип, дополнения</th>
-              <th scope="col">цвет</th>
-              <th scope="col">ширина</th>
-              <th scope="col">длинна</th>
-              <th scope="col">кол</th> 
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" class="text-center">1</th>
-              <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
-              <td class="text-left">белый</td><!-- цвет -->
-              <td class="text-right">1200</td><!-- ширина -->
-              <td class="text-right">850</td><!-- длинна -->
-              <td class="text-center">2</td><!-- кол --> 
-            </tr>
-            <tr>
-              <th scope="row" class="text-center">2</th>
-              <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
-              <td class="text-left">коричневый</td><!-- цвет -->
-              <td class="text-right">1450</td><!-- ширина -->
-              <td class="text-right">640</td><!-- длинна -->
-              <td class="text-center">1</td><!-- кол --> 
-            </tr>
-            <tr>
-              <th scope="row" class="text-center">3</th>
-              <td class="text-left">сетка, премиум, полотно обычное</td><!-- изделие, тип, дополнения -->
-              <td class="text-left">антрацит</td><!-- цвет -->
-              <td class="text-right">1520</td><!-- ширина -->
-              <td class="text-right">840</td><!-- длинна -->
-              <td class="text-center">5</td><!-- кол --> 
-            </tr>
-            <tr>
-              <th scope="row" class="text-center">5</th>
-              <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
-              <td class="text-left">белый</td><!-- цвет -->
-              <td class="text-right">1200</td><!-- ширина -->
-              <td class="text-right">850</td><!-- длинна -->
-              <td class="text-center">2</td><!-- кол --> 
-            </tr>
-          </tbody>
-        </table>
-    
-        <span><a href="order/5.html"> Заказ #3 от 28.03</a></span>
-            <table class="table table-sm table-bordered table-hover">
-              <!--  шаблон таблици -->
-              <thead>
-                <tr class="bg-warning text-center">
-                  <th scope="col">#</th>
-                  <th scope="col">изделие, тип, дополнения</th>
-                  <th scope="col">цвет</th>
-                  <th scope="col">ширина</th>
-                  <th scope="col">длинна</th>
-                  <th scope="col">кол</th> 
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row" class="text-center">1</th>
-                  <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
-                  <td class="text-left">белый</td><!-- цвет -->
-                  <td class="text-right">1200</td><!-- ширина -->
-                  <td class="text-right">850</td><!-- длинна -->
-                  <td class="text-center">2</td><!-- кол --> 
-                </tr>
-                <tr>
-                  <th scope="row" class="text-center">2</th>
-                  <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
-                  <td class="text-left">коричневый</td><!-- цвет -->
-                  <td class="text-right">1450</td><!-- ширина -->
-                  <td class="text-right">640</td><!-- длинна -->
-                  <td class="text-center">1</td><!-- кол --> 
-                </tr>
-                <tr>
-                  <th scope="row" class="text-center">3</th>
-                  <td class="text-left">сетка, премиум, полотно обычное</td><!-- изделие, тип, дополнения -->
-                  <td class="text-left">антрацит</td><!-- цвет -->
-                  <td class="text-right">1520</td><!-- ширина -->
-                  <td class="text-right">840</td><!-- длинна -->
-                  <td class="text-center">5</td><!-- кол --> 
-                </tr>
-              </tbody>
-            </table>
-    
       </div>
+    </div>
+
+  </div>
 
 
 
 
 
 
-  <br><br><br>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
-      crossorigin="anonymous"></script>
+  <br><br><br>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-  
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -199,6 +105,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>
