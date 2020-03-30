@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang=ru-UA>
+
+<head>
+  <meta http-equiv=X-UA-Compatible content="IE=8,IE=9">
+  <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
+  <title>Заказы</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- top menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link text-info" href="./index.html">
+          <ion-icon name="calculator-outline"></ion-icon>
+          Калькулятор
+        </a>
+        <a class="nav-item nav-link text-primary" href="suppliers.html">
+          <ion-icon name="briefcase-outline"></ion-icon> У постащика
+        </a>
+        <a class="nav-item nav-link text-danger" href="./wait.html">
+          <ion-icon name="alarm-outline"></ion-icon>
+          в ожидании
+        </a>  
+        <a class="nav-item nav-link text-success" href="ready.html">
+          <ion-icon name="apps-outline"></ion-icon>
+          Готовые заказы
+        </a>
+        <a class="nav-item nav-link text-primary" href="suppliers.html">
+          <ion-icon name="server-outline"></ion-icon> Архив
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- top menu and -->
+ 
+  <div class="container"><h1 class="text-center text-muted">Все заказы</h1></div>
+   <!-- линия разрыва -->
+ 
+
+  <!--  шаблон таблици  №1-->
+  <div class="container">
+    <p>&lt;!--для просмотра заказа кликаем по номеру заказа--&gt;
+    &lt;!--  сортировка по дате вверху новые, группировать по статусам --&gt;</p>
+    <div class="table-responsive">
+    <table class="table table-sm table-bordered table-hover">
+
+      <thead>
+        <tr class="bg-warning text-center">
+          <th scope="col">Заказа</th>
+          <th scope="col">Клиент</th>
+          <th scope="col">Сумма</th>
+          <th scope="col">Оплачено</th>
+          <th scope="col">Остаток</th>
+          <th scope="col">Статус</th>  
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-center"><a href="order/5.html"> #5 от 29.03</a></th><!-- # заказа -->
+          <td class="text-left"><a href="order/5.html">Сергей сергеевич 098 5943316</a></td><!-- имя Клиента -->
+          <td class="text-right">1200</td><!-- сумма -->
+          <td class="text-right">0</td><!-- оплачено -->
+          <td class="text-right">0</td><!-- остаток -->
+          <td class="text-right text-danger">новый</td><!-- статус --> 
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">#4 от 29.03</th><!-- # заказа -->
+          <td class="text-left">Андрей сергеевич 098 5943316</td><!-- имя Клиента -->
+          <td class="text-right">800</td><!-- сумма -->
+          <td class="text-right">0</td><!-- оплачено -->
+          <td class="text-right">0</td><!-- остаток -->
+          <td class="text-right text-danger">новый</td><!-- статус --> 
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">#3 от 28.03</th><!-- # заказа -->
+          <td class="text-left">Петр сергеевич 098 5943316</td><!-- имя Клиента -->
+          <td class="text-right">2500</td><!-- сумма -->
+          <td class="text-right">1500</td><!-- оплачено -->
+          <td class="text-right">1000</td><!-- остаток -->
+          <td class="text-right text-primary">у поставщика</td><!-- статус --> 
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">#2 от 27.03</th><!-- # заказа -->
+          <td class="text-left">Юрий сергеевич 098 5943316</td><!-- имя Клиента -->
+          <td class="text-right">300</td><!-- сумма -->
+          <td class="text-right">150</td><!-- оплачено -->
+          <td class="text-right">150</td><!-- остаток -->
+          <td class="text-right text-warning">на складе</td><!-- статус --> 
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">#1 от 26.03</th><!-- # заказа -->
+          <td class="text-left">Сергей сергеевич 098 5943316</td><!-- имя Клиента -->
+          <td class="text-right">450</td><!-- сумма -->
+          <td class="text-right">450</td><!-- оплачено -->
+          <td class="text-right">0</td><!-- остаток -->
+          <td class="text-right text-success">выполнен</td><!-- статус --> 
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  
+<br> <br>
+
+
+
+<br><br><br>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

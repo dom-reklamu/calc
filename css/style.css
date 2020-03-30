@@ -1,0 +1,178 @@
+.switch-field {
+  display: none;
+}
+ .switch-field-action {
+  display: none;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font: bold 18px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+  margin: 10px 0;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+  color: #fff;
+  background: #fec54c;
+	font: bold 18px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.switch-field input:checked + label {
+	background-color: #4c90fe;
+	box-shadow: none;
+  color: white;
+}
+
+.switch-field label:first-of-type {
+	
+}
+
+.switch-field label:last-of-type {
+
+}
+
+/* This is just for CodePen. */
+.otboy-field {
+  display: none;
+	
+}
+
+.otboy-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.otboy-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font: bold 18px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+  margin: 10px 0;
+}
+
+.otboy-field label:hover {
+	cursor: pointer;
+  color: #fff;
+  background: #fec54c;
+	font: bold 18px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.otboy-field input:checked + label {
+	background-color: #4c90fe;
+    box-shadow: none;
+    color: white;
+}
+
+.otboy-field label:first-of-type {
+
+}
+
+.otboy-field label:last-of-type {
+	
+}
+.okno-field {
+  display: none;
+	
+}
+
+.okno-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.okno-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font: bold 18px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+  margin: 10px 0;
+}
+
+.okno-field label:hover {
+	cursor: pointer;
+  color: #fff;
+  background: #fec54c;
+	font: bold 18px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.okno-field input:checked + label {
+	background-color: #4c90fe;
+    box-shadow: none;
+    color: white;
+}
+
+.okno-field label:first-of-type {
+	
+}
+
+.okno-field label:last-of-type {
+	
+}
+
+.red::placeholder {
+  color: red;
+  border-color: blue;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang=ru-UA>
+
+<head>
+  <meta http-equiv=X-UA-Compatible content="IE=8,IE=9">
+  <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>
+  <title>offer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+ 
+
+   <!-- линия разрыва -->
+ <br> <br>
+ <div class="container" style="border-bottom: #ddd dashed;height: 1px;"></div>
+ <br> <br>
+
+<!-- шапка для выставления счета  №2 -----------------------  -->
+<div class="container">
+  <h2 class="text-center">Счет на оплату #2 от 
+    <script>var d=new Date();var day=d.getDate();var month=((d.getMonth()<9?'0':'')+(d.getMonth()+1));var year=d.getFullYear();document.write(day+"."+month+"."+year);</script></h2>
+    <br>
+    <dl class="row">
+      <dt class="col-sm-3 text-right">Поставщик</dt>
+      <dd class="col-sm-8">название компании</dd>
+    
+      <dt class="col-sm-3 text-right">Реквизиты: </dt>
+      <dd class="col-sm-8">
+        <span>ЄДРПОУ 3143301430,  р/р 26003056223347  </span><br>
+        <span>Банк: ПАТ КБ «ПРИВАТБАНК»  МФО:  305299 </span>
+      </dd>
+    
+      <dt class="col-sm-3 text-right">Покупатель:</dt>
+      <dd class="col-sm-8"><input class="border-0" size="50%" type="text" name="Ввод имени и номера клиента" placeholder="Ввод имени и номера клиента" id="client_name"></dd>
+      
+    
+      <dt class="col-sm-3 text-right">Адреса доставки:	</dt>
+      <dd class="col-sm-8"><input class="border-0" size="50%"
+        type="text" name="Адрес доставки" placeholder="Адрес доставки (по умолчанию самовывоз)" id="client_adress"></dd>
+         
+      <dt class="col-sm-3 text-right">Дата вывоза:	</dt>
+      <dd class="col-sm-2"><input type="date" class="border-0"  id="datetimepicker" name=" "   placeholder="" value=""></dd>
+    </dl>
+  </dd>
+</dl>
+</div>
+<!-- and - шапка для выставления счета ----------------------------------- and -->
+
+
+  <!--  шаблон таблици  №2-->
+  <div class="container"> 
+    <div class="table-responsive">
+    <table class="table table-sm table-bordered table-hover">
+
+      <thead>
+        <tr class="bg-warning text-center">
+          <th scope="col">#</th>
+          <th scope="col">изделие, тип, дополнения</th>
+          <th scope="col">цвет</th>
+          <th scope="col">ширина</th>
+          <th scope="col">длинна</th>
+          <th scope="col">кол</th>
+          <th scope="col">сумма UAH</th> 
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="text-center">1</th>
+          <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
+          <td class="text-left">белый</td><!-- цвет -->
+          <td class="text-right">1200</td><!-- ширина -->
+          <td class="text-right">850</td><!-- длинна -->
+          <td class="text-center">2</td><!-- кол -->
+          <td class="text-right">350</td><!-- стоимость --> 
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">2</th>
+          <td class="text-left">сетка, анвис</td><!-- изделие, тип, дополнения -->
+          <td class="text-left">коричневый</td><!-- цвет -->
+          <td class="text-right">1450</td><!-- ширина -->
+          <td class="text-right">640</td><!-- длинна -->
+          <td class="text-center">1</td><!-- кол -->
+          <td class="text-right">400</td><!-- стоимость --> 
+        </tr>
+        <tr>
+          <th scope="row" class="text-center">3</th>
+          <td class="text-left">сетка, премиум, полотно обычное</td><!-- изделие, тип, дополнения -->
+          <td class="text-left">антрацит</td><!-- цвет -->
+          <td class="text-right">1520</td><!-- ширина -->
+          <td class="text-right">840</td><!-- длинна -->
+          <td class="text-center">5</td><!-- кол -->
+          <td class="text-right">3200</td><!-- стоимость --> 
+        </tr>
+        <tr>
+          <th scope="row" class="border-0"> </th>
+          <td class="border-0"> </td><!-- изделие, тип, дополнения -->
+          <td class="border-0"> </td><!-- цвет -->
+          <td class="border-0"> </td><!-- ширина -->
+          <td class="text-right">Всего: </td><!-- длинна -->
+          <td class="text-center">8</td><!-- кол -->
+          <td class="text-right">3950 грн</td><!-- стоимость --> 
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+<!-- линия разрыва -->
+<br> <br>
+<div class="container" style="border-bottom: #ddd dashed;height: 1px;"></div>
+<br> <br>
+
+<div class="container">
+  <div class="form-row text-right">
+    <div class="col">  
+      <button class="btn btn-primary" onclick='print();'>распечатать</button>
+    </div>
+    <div class="col"> 
+      <a href="order.html" class="btn btn-primary" role="button" aria-pressed="true">отправить в заказы</a>
+    </div>
+    <div class="col">
+      <a href="index.html" class="btn btn-primary" role="button" aria-pressed="true">отменить</a>
+    </div>
+  </div>
+</div>
+     
+<br> <br>
+ 
+
+
+<br><br><br>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
