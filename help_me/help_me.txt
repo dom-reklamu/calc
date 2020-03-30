@@ -5,7 +5,7 @@
  git push -u origin master
 
  коммент
- git commit -m  "add readme"
+ git commit -m  "ссылка на файлcompleted"
 
  git status
 
