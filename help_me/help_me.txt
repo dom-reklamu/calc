@@ -1,0 +1,14 @@
+ Обновить файлы
+ git add .
+ 
+ Залить все
+ git push -u origin master
+
+ коммент
+ git commit -m  "add readme"
+
+ git status
+
+
+ подключение к репозиторию
+ git remote add origin https://github.com/dom-reklamu/calc.git
